@@ -1,0 +1,96 @@
+@keyframes slide {
+    0% {
+        top: 0;
+        left: -1000px;
+    }
+    25% {
+        top: 0;
+        left: -500px;
+    }
+    50% {
+        top: 0;
+        left: -250px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    background: #F9F871;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    
+    div#container{ 
+      background-color: #FFC75F;
+      position: relative;
+      top: 175px;
+      margin: auto;
+      width: 325px;
+      height: 325px;
+      color: #845EC2;
+      border-radius: 5px;
+      
+      h1{
+        padding: 25px;
+        margin: 0 15px;
+        border-bottom: solid 2px #845EC2;
+      }
+      input{
+        border-radius: 5px;
+        text-decoration: none;
+        border: none;
+        
+        &[type=number]{
+        padding: 10px 20px;
+        width: 150px;
+        margin: 15px 0;
+      }
+        
+        &[type=submit]{
+        display: block;
+        margin: auto;
+        width: 150px;
+        padding: 10px 20px;
+        background-color: #FF9671;
+        transition: 0.25s ease-in;
+          
+          &:hover{
+            cursor: pointer;
+            background-color: #845EC2;
+          }
+      }
+     
+      }
+      #output{
+        position: relative;
+        margin: 25px 0;
+        font-size: 35px;
+        height: 35px;
+        animation: slide() 0.5s linear;
+      }
+
+      #clear{
+        width: 150px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        border: none;
+        background-color: #FF9671;
+        transition: 0.25s ease-in;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #845EC2;
+        }
+      }
+    }
+  }

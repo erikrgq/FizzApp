@@ -1,4 +1,4 @@
-function getNumber(){
+var getNumber = document.getElementById('submit').addEventListener('click', function(){
     var n1 = document.getElementById('input').value;
     console.log(n1);
 
@@ -21,4 +21,4 @@ function getNumber(){
         clear1 = document.getElementById('output').innerText = '';
         clear2 = document.getElementById('input').value = '';
     });
-}
+});

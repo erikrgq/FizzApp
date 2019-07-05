@@ -44,8 +44,7 @@ body {
       position: relative;
       margin: 25px 0;
       font-size: 35px;
-      height: 35px;
-      animation: slide() 0.5s linear; }
+      height: 35px; }
     body div#container #clear {
       width: 150px;
       padding: 10px 20px;
